@@ -1,0 +1,17 @@
+query getPrimaryMenuByCategory($first: Int = 10) {
+  productCategories(where: {orderby: COUNT, order: DESC}, first: $first){
+     nodes {
+        id
+        count
+        children {
+          nodes {
+            id
+            slug
+            name
+          }
+        }
+        slug
+        name
+      }
+    }
+}

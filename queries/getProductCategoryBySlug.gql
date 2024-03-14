@@ -1,0 +1,11 @@
+query getProductCategoryBySlug(
+  $id: ID = ""
+  $idType: ProductCategoryIdType = SLUG
+) {
+  productCategory(id: $id, idType: $idType) {
+    id
+    description
+    name
+    slug
+  }
+}

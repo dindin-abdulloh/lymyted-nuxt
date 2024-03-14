@@ -1,0 +1,53 @@
+{
+  "name": "lymyted",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "postinstall": "nuxi prepare",
+    "lint": "eslint --ext .vue,.ts,.tsx,.js,.mjs .",
+    "lint:fix": "eslint --fix --ext .vue,.ts,.tsx,.js,.mjs .",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,css,md,mdx,vue}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,css,md,mdx,vue}\"",
+    "serve": "nuxi generate && npx serve .output/public -l 8080"
+  },
+  "dependencies": {
+    "@nuxt/image": "^1.3.0",
+    "@nuxt/kit": "^3.10.3",
+    "@stripe/stripe-js": "^2.4.0",
+    "@vueform/slider": "^2.1.10",
+    "@vueuse/core": "^10.9.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "graphql-request": "^6.1.0",
+    "lucide-vue-next": "^0.354.0",
+    "nuxt": "^3.10.3",
+    "nuxt-graphql-client": "^0.2.33",
+    "ofetch": "^1.3.3",
+    "radix-vue": "^1.5.1",
+    "tailwind-merge": "^2.2.1",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0",
+    "vue-stripe-js": "^1.0.2"
+  },
+  "devDependencies": {
+    "@nuxt/fonts": "^0.1.0",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@nuxtjs/i18n": "^8.1.1",
+    "@nuxtjs/tailwindcss": "^6.11.4",
+    "@tailwindcss/typography": "^0.5.10",
+    "@typescript-eslint/parser": "^7.1.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "nuxt-icon": "^0.6.8",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.12",
+    "shadcn-nuxt": "^0.10.0",
+    "tailwindcss-animate": "^1.0.7"
+  }
+}
